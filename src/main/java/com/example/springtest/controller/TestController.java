@@ -14,6 +14,6 @@ public class TestController {
 
     @PostMapping
     public String postTest() {
-        return "Success ";
+        return "Success";
     }
 }

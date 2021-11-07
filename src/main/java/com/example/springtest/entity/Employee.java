@@ -8,18 +8,32 @@ import javax.persistence.Id;
 class Employee {
 
     private @Id @GeneratedValue Long id;
+
     private String name;
     private String role;
 
-    Employee() {}
+    public Employee() {}
 
-    Employee(String name, String role) {
-
+     Employee(String name, String role) {
         this.name = name;
         this.role = role;
     }
 
-    //TODO: add getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     @Override
     public boolean equals(Object o) {
